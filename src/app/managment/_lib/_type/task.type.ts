@@ -12,7 +12,9 @@ export interface ILink{
 export interface ITaskToCreate{
     descriptionTask:string
     taskTitle:string
-    workspaceId:string
+    workspaceId:string,
+    dateStart:Date,
+    dateEnd:Date
 }
 
 export interface ITag{

@@ -1,6 +1,6 @@
 import {httpClient} from "@/lib/axios";
 import {TASK_ENDPOINTS} from "@/app/managment/_constants/endpoints";
-import {ITaskToCreate} from "@/app/managment/_lib/_type/task.type";
+import {ITaskToCreate} from "@/app/managment/_lib/_type/task.types";
 
 
 class TaskService{

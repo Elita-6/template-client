@@ -1,6 +1,6 @@
 import {httpClient} from "@/lib/axios";
 import {MESSAGE_ENDPOINTS} from "@/app/managment/_constants/endpoints";
-import {IMessage, IMessageToCreate} from "@/app/managment/_lib/_type/message.type";
+import {IMessage, IMessageToCreate} from "@/app/managment/_lib/_type/message.types";
 
 class MessageService{
     public getMessageByWorkspaceId(workspaceId:string){

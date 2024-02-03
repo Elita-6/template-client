@@ -2,6 +2,9 @@ export interface ITask{
     taskId:string
     descriptionTask:string
     taskTitle:string
+    dateStart:string
+    dateEnd:string
+    statusId:string
 }
 
 export interface ILink{
@@ -13,6 +16,7 @@ export interface ITaskToCreate{
     descriptionTask:string
     taskTitle:string
     workspaceId:string
+    statusId:string
 }
 
 export interface ITag{

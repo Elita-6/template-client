@@ -7,7 +7,7 @@ export default function Layout({children}:PropsWithChildren){
             <aside>
                 <LeftNav/>
             </aside>
-            <section>
+            <section className='w-full'>
                 {children}
             </section>
         </main>

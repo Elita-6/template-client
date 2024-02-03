@@ -1,9 +1,12 @@
-
+'use client'
 import {ValueIcon} from "@radix-ui/react-icons";
 import {Button} from "@/components/ui/button";
 import {EnvelopeClosedIcon} from "@radix-ui/react-icons";
 import {Avatar, AvatarGroup} from "@nextui-org/react";
 import { CiFilter } from "react-icons/ci";
+import {ButtonAdd} from "@/app/dashboard/_components/button_add";
+import { HiOutlineDotsVertical } from "react-icons/hi"
+import {TaskCard} from "@/app/dashboard/workspace/_components/kanban/task_card";
 
 
 
@@ -51,15 +54,21 @@ export default function WorkspaceDetails({params}:{params:{slug:string}}){
                         <span>Filter</span>
                     </div>
                 </div>
-                <div className='flex '>
-                    <div className=''>
+                <div className='flex w-full flex-wrap justify-between '>
+                    <TaskCard/>
+                    <div className='w-[30%] flex flex-col space-y-3'>
+                        <div className='flex  space-x-2 items-center'>
+                            <div className='bg-[#f6e549] rounded-full w-2 h-2'/>
+                            <span className='text-sm opacity-75'>Waiting</span>
+                        </div>
+                        <ButtonAdd HandleClick={()=>{}}/>
+                    </div>
+                    <div className='w-[30%] flex flex-col space-y-3'>
                         <div className='flex space-x-2 items-center'>
                             <div className='bg-[#f6e549] rounded-full w-2 h-2'/>
                             <span className='text-sm opacity-75'>Waiting</span>
                         </div>
-                        <button>
-
-                        </button>
+                        <ButtonAdd HandleClick={()=>{}}/>
                     </div>
                 </div>
                 <div>

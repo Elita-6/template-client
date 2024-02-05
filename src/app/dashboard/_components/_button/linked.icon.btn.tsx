@@ -12,7 +12,7 @@ export const LinkedIconBtn = (props:LinkedIconBtnProps)=>{
     const pathname = usePathname()
     return(
         <Button variant="link" size="icon" asChild>
-            <Link href={href} className={`${pathname == href? "bg-blue-500 text-gray-100":""}`} >{icon}</Link> 
+            <Link href={href} className={`${pathname == href? "bg-blue-500 text-white":""}`} >{icon}</Link>
         </Button>
     )
 }

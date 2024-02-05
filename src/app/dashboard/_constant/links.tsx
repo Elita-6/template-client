@@ -6,12 +6,12 @@ export const Links = [
         icon:<DashboardIcon style={{width:22, height:22}} />
     },
     {
-        href:"/dashboard/when2meet",
+        href:"/dashboard/when-to-meet",
         icon:<CalendarIcon style={{width:22, height:22}}/>
     },
     {
         href:"/dashboard/workspace",
-        icon:<CodeIcon style={{width:22, height:22}}/>
+        icon:<CodeIcon   style={{width:22, height:22}}/>
     },
     {
         href:"/dashboard/setting",

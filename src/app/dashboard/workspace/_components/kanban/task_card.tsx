@@ -26,12 +26,7 @@ export const TaskCard = (props: Props) => {
         to: addDays(new Date(2022, 0, 20), 20),
     })
     return (
-        <div className='w-[30%]  flex flex-col space-y-3'>
-            <div className='flex space-x-2 items-center'>
-                <div className='bg-[#f6e549] rounded-full w-2 h-2'/>
-                <span className='text-sm opacity-75'>Waiting</span>
-            </div>
-            <ButtonAdd HandleClick={()=>{}}/>
+        <div className='w-full  flex flex-col space-y-3'>
             <div className=' fle flex-col bg-white  p-2 space-y-2'>
                 <div className='flex justify-between items-start'>
                     <div className='bg-[#D449F6] h-1 w-14'/>

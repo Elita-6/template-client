@@ -12,7 +12,7 @@ export default function WorkspaceDetails({params}:{params:{slug:string}}){
     }
     return(
         <div className="">
-            <div className="space-y-5 px-6 w-full">
+            <div className="space-y-5 w-full">
                 <div className='flex  items-center space-x-2  font-[600em] text-2xl'>
                     <ValueIcon style={{width:18, height:18}} color="#00BFA5"/>
                     <h3>Team Dashboard App {params.slug}</h3>
@@ -61,7 +61,6 @@ export default function WorkspaceDetails({params}:{params:{slug:string}}){
                                 <div className='bg-[#f6e549] rounded-full w-2 h-2'/>
                                 <span className='text-sm opacity-75'>Waiting</span>
                             </div>
-                            {/* eslint-disable-next-line react/jsx-no-undef */}
                             <ButtonAdd HandleClick={HandleClick}/>
                         </div>
                         <div className='w-[30%] flex flex-col space-y-3'>

@@ -1,6 +1,6 @@
 import { addDays, format } from "date-fns"
 import { DateRange } from "react-day-picker"
-
+import { AiOutlineLink } from "react-icons/ai";
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Calendar } from "@/components/ui/calendar"
@@ -14,6 +14,7 @@ import React from "react";
 import {HiOutlineDotsVertical} from "react-icons/hi";
 import {CalendarIcon} from "@radix-ui/react-icons";
 import {ButtonAdd} from "@/app/dashboard/workspace/_components/button/button_add";
+import {Avatar, AvatarGroup} from "@nextui-org/react";
 
 type Props = {
 
@@ -43,7 +44,7 @@ export const TaskCard = (props: Props) => {
                         Lorem ipsum dolor sit amet consectetur. Porttitor at sed magna convallis.
                     </p>
                 </div>
-                <p className='color-[#506684] text-[12px] opacity-75'> #design-system #ux #ui</p>
+                <p className='text-[#506684] text-[12px] opacity-75'> #design-system #ux #ui</p>
                 <div className='w-full h-[1px] bg-[#000] opacity-15 '/>
                 <div className={cn("grid gap-2", className)}>
                     <Popover>
@@ -52,7 +53,7 @@ export const TaskCard = (props: Props) => {
                                 id="date"
                                 variant={"outline"}
                                 className={cn(
-                                    "w-[95%] justify-center text-left font-normal",
+                                    "w-[95%] justify-center text-left font-normal rounded-full bg-[#8C8C8C29]",
                                     !date && "text-muted-foreground"
                                 )}
                             >
@@ -82,6 +83,22 @@ export const TaskCard = (props: Props) => {
                             />
                         </PopoverContent>
                     </Popover>
+                </div>
+                <div className='flex justify-between items-center'>
+                    <div>
+                        <AvatarGroup isBordered max={3} total={10}>
+                            <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
+                            <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+                            <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
+                            <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
+                            <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
+                            <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
+                        </AvatarGroup>
+                    </div>
+                    <div className=' flex items-center space-x-3'>
+                        <AiOutlineLink/>
+                        <p>3</p>
+                    </div>
                 </div>
             </div>
         </div>

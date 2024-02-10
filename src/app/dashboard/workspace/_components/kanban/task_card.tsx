@@ -15,6 +15,7 @@ import {HiOutlineDotsVertical} from "react-icons/hi";
 import {CalendarIcon} from "@radix-ui/react-icons";
 import {ButtonAdd} from "@/app/dashboard/workspace/_components/button/button_add";
 import {Avatar, AvatarGroup} from "@nextui-org/react";
+import { IoMdAdd } from "react-icons/io";
 
 type Props = {
 
@@ -33,7 +34,7 @@ export const TaskCard = (props: Props) => {
             <ButtonAdd HandleClick={()=>{}}/>
             <div className=' fle flex-col bg-white  p-2 space-y-2'>
                 <div className='flex justify-between items-start'>
-                    <div className='bg-[#506684] h-1 w-14'/>
+                    <div className='bg-[#D449F6] h-1 w-14'/>
                     <HiOutlineDotsVertical size={25} className='cursor-pointer'/>
                 </div>
                 <div className='flex flex-col space-y-3'>
@@ -85,15 +86,20 @@ export const TaskCard = (props: Props) => {
                     </Popover>
                 </div>
                 <div className='flex justify-between items-center'>
-                    <div>
-                        <AvatarGroup isBordered max={3} total={10}>
-                            <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
-                            <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
-                            <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
-                            <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
-                            <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
-                            <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
-                        </AvatarGroup>
+                    <div className='flex items-center space-x-2'>
+                        <div>
+                            <AvatarGroup isBordered max={1} total={2}>
+                                <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
+                                <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+                                <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
+                                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
+                                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
+                                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
+                            </AvatarGroup>
+                        </div>
+                        <button className='border-[1px] rounded-lg p-2'>
+                            <IoMdAdd/>
+                        </button>
                     </div>
                     <div className=' flex items-center space-x-3'>
                         <AiOutlineLink/>

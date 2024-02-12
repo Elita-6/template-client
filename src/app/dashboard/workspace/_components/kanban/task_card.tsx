@@ -16,9 +16,10 @@ import {CalendarIcon} from "@radix-ui/react-icons";
 import {ButtonAdd} from "@/app/dashboard/workspace/_components/button/button_add";
 import {Avatar, AvatarGroup} from "@nextui-org/react";
 import { IoMdAdd } from "react-icons/io";
+import {ITask} from "@/app/managment/_lib/_type/task.types";
 
 type Props = {
-
+    task:ITask
 };
 export const TaskCard = (props: Props) => {
     const [date, setDate] = React.useState<DateRange | undefined>({
@@ -34,10 +35,10 @@ export const TaskCard = (props: Props) => {
                 </div>
                 <div className='flex flex-col space-y-3'>
                     <h3>
-                        User Interface Design
+                        {props.task.taskTitle}
                     </h3>
                     <p className='opacity-75 text-sm'>
-                        Lorem ipsum dolor sit amet consectetur. Porttitor at sed magna convallis.
+                        {props.task.descriptionTask}
                     </p>
                 </div>
                 <p className='text-[#506684] text-[12px] opacity-75'> #design-system #ux #ui</p>

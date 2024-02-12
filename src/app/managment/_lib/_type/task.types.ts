@@ -1,3 +1,5 @@
+import {color} from "framer-motion";
+
 export interface ITask{
     taskId:string
     descriptionTask:string
@@ -36,4 +38,13 @@ export interface IFile{
     descriptionFile:string
     taskId:string
 }
+export interface ITaskGroup {
+    tasks: ITask[];
+    status: string;
+    color: string;
+}
+
+
+
+
 

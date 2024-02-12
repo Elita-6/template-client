@@ -10,20 +10,21 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover"
 import {className} from "postcss-selector-parser";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {HiOutlineDotsVertical} from "react-icons/hi";
 import {CalendarIcon} from "@radix-ui/react-icons";
 import {ButtonAdd} from "@/app/dashboard/workspace/_components/button/button_add";
 import {Avatar, AvatarGroup} from "@nextui-org/react";
 import { IoMdAdd } from "react-icons/io";
+import {ITask} from "@/app/managment/_lib/_type/task.types";
 
 type Props = {
-
+    task:ITask
 };
 export const TaskCard = (props: Props) => {
     const [date, setDate] = React.useState<DateRange | undefined>({
-        from: new Date(2022, 0, 20),
-        to: addDays(new Date(2022, 0, 20), 20),
+        from: new Date(2023, 0, 20),
+        to: addDays(new Date(2023, 0, 20), 20),
     })
     return (
         <div className='w-full  flex flex-col space-y-3'>
@@ -34,10 +35,10 @@ export const TaskCard = (props: Props) => {
                 </div>
                 <div className='flex flex-col space-y-3'>
                     <h3>
-                        User Interface Design
+                        {props.task.taskTitle}
                     </h3>
                     <p className='opacity-75 text-sm'>
-                        Lorem ipsum dolor sit amet consectetur. Porttitor at sed magna convallis.
+                        {props.task.descriptionTask}
                     </p>
                 </div>
                 <p className='text-[#506684] text-[12px] opacity-75'> #design-system #ux #ui</p>

@@ -20,7 +20,7 @@ export default function WorkspaceDetails({params}:{params:{slug:string}}){
                                         <div className='flex flex-col space-y-3'>
                                             <div className='flex  space-x-2 items-center'>
                                                 <div className={`bg-[#${value.color}]`}/>
-                                                <span className='text-sm opacity-75'>{value.status} {value.color} </span>
+                                                <span className='text-sm opacity-75'>{value.status} </span>
                                             </div>
                                             <ButtonAdd HandleClick={HandleClick}/>
                                         </div>

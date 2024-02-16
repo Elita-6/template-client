@@ -4,13 +4,22 @@ import {ButtonAdd} from "@/app/dashboard/workspace/_components/button/button_add
 import {allTasks} from "@/app/dashboard/_constant/data.example";
 import {ITaskGroup} from "@/app/managment/_lib/_type/task.types";
 import clsx from "clsx";
+import {useState} from "react";
+import CreateTaskModal from "@/app/dashboard/workspace/_components/kanban/create_task_modal";
 
 
 export default function WorkspaceDetails({params}:{params:{slug:string}}){
     const HandleClick = ()=>{
+        setIsOPen(oldValue=>!oldValue)
     }
+    const [isOpen,setIsOPen] = useState<boolean>(false)
     return(
         <div className="">
+            {
+                isOpen && (
+                    <CreateTaskModal HandleClick={HandleClick}/>
+                )
+            }
             <div className="space-y-5 w-full">
                 <div className='bg-[#e6eaf042] w-full py-5 space-y-5 '>
                     <div className='flex w-full flex-wrap justify-between '>

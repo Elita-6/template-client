@@ -9,7 +9,7 @@ interface Props{
 const AssignationModal = (props:Props) => {
     return (
         <div className='overlay-a ' onClick={props.HandleClick}>
-            <div className='central-a flex flex-col px-4 py-2 space-y-3' onClick={(e)=>e.stopPropagation()}>
+            <div className='central-a flex flex-col px-4 py-2 space-y-4 rounded-lg' onClick={(e)=>e.stopPropagation()}>
                 <div className='flex justify-end w-full'>
                     <button onClick={props.HandleClick}>
                         <MdOutlineClose className='text-xl'/>

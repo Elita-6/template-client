@@ -18,6 +18,7 @@ import {Avatar, AvatarGroup} from "@nextui-org/react";
 import { IoMdAdd } from "react-icons/io";
 import {ITask} from "@/app/managment/_lib/_type/task.types";
 import AssignationModal from "@/app/dashboard/workspace/_components/modal/assignation_modal";
+import LineIndicator from "@/app/dashboard/workspace/_components/kanban/line_indicator";
 
 type Props = {
     task:ITask
@@ -41,7 +42,7 @@ export const TaskCard = (props: Props) => {
             <div className='w-full  flex flex-col space-y-3'>
                 <div className=' fle flex-col bg-white  p-2 space-y-2'>
                     <div className='flex justify-between items-start'>
-                        <div className='bg-[#D449F6] h-1 w-14'/>
+                        <LineIndicator color={props.task.color}/>
                         <HiOutlineDotsVertical size={25} className='cursor-pointer'/>
                     </div>
                     <div className='flex flex-col space-y-3'>

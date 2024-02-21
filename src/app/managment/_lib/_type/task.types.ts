@@ -1,3 +1,5 @@
+import {color} from "framer-motion";
+
 export interface ITask{
     taskId:string
     descriptionTask:string
@@ -5,6 +7,7 @@ export interface ITask{
     dateStart:string
     dateEnd:string
     statusId:string
+    color:string
 }
 
 export interface ILink{
@@ -36,4 +39,13 @@ export interface IFile{
     descriptionFile:string
     taskId:string
 }
+export interface ITaskGroup {
+    tasks: ITask[];
+    status: string;
+    color: string;
+}
+
+
+
+
 

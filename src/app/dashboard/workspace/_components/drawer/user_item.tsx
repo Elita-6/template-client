@@ -1,4 +1,4 @@
-import React, {MouseEventHandler, useState} from 'react';
+import React, {useState} from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 interface Props{

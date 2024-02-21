@@ -5,7 +5,7 @@ import {allTasks} from "@/app/dashboard/_constant/data.example";
 import {ITaskGroup} from "@/app/managment/_lib/_type/task.types";
 import clsx from "clsx";
 import {useState} from "react";
-import CreateTaskModal from "@/app/dashboard/workspace/_components/kanban/create_task_modal";
+import CreateTaskModal from "@/app/dashboard/workspace/_components/modal/create_task_modal";
 
 
 export default function WorkspaceDetails({params}:{params:{slug:string}}){

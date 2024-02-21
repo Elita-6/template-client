@@ -18,7 +18,7 @@ const AssignationModal = (props:Props) => {
                 <div className='space-y-2'>
                     <input type='text'  placeholder='Search by name, email'
                            className='outline-none p-2 input '  />
-                    <UserItem/>
+                    <UserItem  email={''} firstname={''} lastname={''} profile={''} userId={''}/>
                 </div>
             </div>
         </div>

@@ -5,6 +5,8 @@ import {allTasks} from "@/app/dashboard/_constant/data.example";
 import {ITaskGroup} from "@/app/managment/_lib/_type/task.types";
 import {useState} from "react";
 import CreateTaskModal from "@/app/dashboard/workspace/_components/modal/create_task_modal";
+import RoundedIndicator from "@/app/dashboard/workspace/_components/kanban/rounded_indicator";
+
 
 
 export default function WorkspaceDetails({params}:{params:{slug:string}}){
@@ -27,7 +29,7 @@ export default function WorkspaceDetails({params}:{params:{slug:string}}){
                                     <div className='w-[30%] flex flex-col space-y-10' key={key}>
                                         <div className='flex flex-col space-y-3'>
                                             <div className='flex  space-x-2 items-center'>
-                                                <div className={`bg-[#${value.color}]`}/>
+                                                <RoundedIndicator color={value.color}/>
                                                 <span className='text-sm opacity-75'>{value.status} </span>
                                             </div>
                                             <ButtonAdd HandleClick={HandleClick}/>

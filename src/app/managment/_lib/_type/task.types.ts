@@ -7,6 +7,7 @@ export interface ITask{
     dateStart:string
     dateEnd:string
     statusId:string
+    color:string
 }
 
 export interface ILink{

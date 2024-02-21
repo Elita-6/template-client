@@ -34,7 +34,8 @@ export const allTasks = [
             taskTitle: "Formation en ligne",
             dateStart: "2024-02-01",
             dateEnd: "2024-03-15",
-            statusId: "waiting"
+            statusId: "waiting",
+            color:'#BCF079'
         }
     ],
     color:"#BCF079"
@@ -48,7 +49,8 @@ export const allTasks = [
                 taskTitle: "Réunion de planification",
                 dateStart: "2024-02-15",
                 dateEnd: "2024-02-15",
-                statusId: "finished"
+                statusId: "finished",
+                color: '#D449F6'
             },
             {
                 taskId: "4",
@@ -56,7 +58,8 @@ export const allTasks = [
                 taskTitle: "Maintenance des serveurs",
                 dateStart: "2024-02-18",
                 dateEnd: "2024-02-18",
-                statusId: "finished"
+                statusId: "finished",
+                color:"#BCF079"
             }
         ],
     color:"#f6e549"
@@ -70,7 +73,8 @@ export const allTasks = [
                 taskTitle: "Développement de fonctionnalité",
                 dateStart: "2024-02-10",
                 dateEnd: "2024-02-20",
-                statusId: "working_on"
+                statusId: "working_on",
+                color:"#D62FBB"
             },
             {
                 taskId: "3",
@@ -78,7 +82,9 @@ export const allTasks = [
                 taskTitle: "Rédaction de rapport",
                 dateStart: "2024-02-05",
                 dateEnd: "2024-02-25",
-                statusId: "working_on"
+                statusId: "working_on",
+
+                color:"#f6e549"
             }
         ],
         color:"#D62FBB"

@@ -6,7 +6,7 @@ class HttpClient {
 
     private  client(): AxiosInstance  {
         return axios.create({
-            baseURL: "http://192.168.62.63/api/main"
+            baseURL: "http://192.168.62.63:8000/api/main"
         })
     }
 

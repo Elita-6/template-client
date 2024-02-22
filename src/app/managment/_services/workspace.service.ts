@@ -7,11 +7,14 @@ class WorkspaceService{
         return httpClient.post(WORKSPACE_ENDPOINTS.CREATE,workspaceToCreate)
     }
     public getTaskListByWorkspaceId(workspaceId: string){
-        return httpClient.get(`workspace\${WORKSPACE_ENDPOINTS.GET_BY_ID}\task`)
+        return httpClient.get(`task/${workspaceId}/`)
     }
 
     public getRecentWorkspace(userId:string){
         return httpClient.get(`workspace\${WORKSPACE_ENDPOINTS.RECENT_LIST}\list`)
+    }
+    public getAllWorkspace(userId:string){
+        return httpClient.get('/workspace')
     }
 
 }

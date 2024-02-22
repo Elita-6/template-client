@@ -8,6 +8,12 @@ export interface ITask{
     dateEnd:string
     statusId:string
     color:string
+    tags:ITag[]
+    users:IUser
+}
+export interface ITag{
+    tabId:string
+    description:string
 }
 
 export interface ILink{
@@ -45,7 +51,13 @@ export interface ITaskGroup {
     color: string;
 }
 
-
-
-
+export interface IWorkspaceDetails{
+    workspaceTitle:string,
+    taskDetails: ITaskGroup
+}
+export interface IUser{
+    userId: string
+    username: string
+    profileURL: string
+}
 

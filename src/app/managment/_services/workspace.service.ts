@@ -10,10 +10,10 @@ class WorkspaceService{
         return httpClient.get(`task/${workspaceId}/`)
     }
 
-    public getRecentWorkspace(userId:string){
+    public getRecentWorkspace(){
         return httpClient.get(`workspace\${WORKSPACE_ENDPOINTS.RECENT_LIST}\list`)
     }
-    public getAllWorkspace(userId:string){
+    public getAllWorkspace(){
         return httpClient.get('/workspace')
     }
 

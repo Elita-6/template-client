@@ -7,6 +7,8 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
+      //path to tremor module
+    './node_modules/@tremor/**/*.{js,ts,jsx,tsx}',
 	],
   prefix: "",
   theme: {
@@ -74,7 +76,17 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  safelist: [
+    {
+      pattern:
+          /^(bg-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-(?:50|100|200|300|400|500|600|700|800|900|950))$/,
+      variants: ['hover', 'ui-selected'],
+    },
+    {
+      pattern:
+          /^(fill-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-(?:50|100|200|300|400|500|600|700|800|900|950))$/,    },
+  ],
+  plugins: [require("tailwindcss-animate"), require('@headlessui/tailwindcss')],
 } satisfies Config
 
 export default config

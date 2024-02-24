@@ -4,7 +4,7 @@ import TopBar from "./_components/_navigation/top.bar";
 
 export default function DashLayout({ children }: PropsWithChildren){
     return(
-        <main className="flex flex-row">
+        <main className="flex flex-row max-h-screen overflow-y-hidden">
             <aside>
                 <LeftIconNav/>
             </aside>

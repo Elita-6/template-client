@@ -21,7 +21,7 @@ const KanbanContainer = () => {
                     <CreateTaskModal HandleClick={HandleClick}/>
                 )
             }
-            <div className="space-y-5 w-full">
+            <div className="space-y-5 w-full h-full">
                 <div className='bg-[#e6eaf042] w-full py-5 space-y-5 '>
                     <div className='flex w-full flex-wrap justify-between '>
                         {

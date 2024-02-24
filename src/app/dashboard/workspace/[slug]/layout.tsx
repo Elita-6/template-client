@@ -14,11 +14,7 @@ export default function Layout({children, params}:{children:React.ReactNode, par
                 <BottomTabList />
             </div>
 
-            <section className='w-full h-full bg-input px-12'>
-                <div className=" w-full  flex justify-between py-4">
-                    <TabList />
-                    <FilterBtn />
-                </div>
+            <section className='w-full h-full  bg-input px-5'>
                 {children}
             </section >
         </Fragment>

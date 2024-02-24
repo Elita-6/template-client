@@ -100,7 +100,7 @@
   width: 35%;
   top: 50%;
   left: 50%;
-  height: 30vh;
+  /*height: 30vh;*/
   transform: translate(-50%,-50%);
   /* height: 40%; */
 }
@@ -111,7 +111,7 @@
   width: 35%;
   top: 50%;
   left: 50%;
-  height: 64vh;
+  /*height: 64vh;*/
   transform: translate(-50%,-50%);
   /* height: 40%; */
 }
@@ -126,7 +126,7 @@
   width: 35%;
   top: 50%;
   left: 50%;
-  height: 53vh;
+  /*height: 53vh;*/
   transform: translate(-50%,-50%);
   /* height: 40%; */
 }

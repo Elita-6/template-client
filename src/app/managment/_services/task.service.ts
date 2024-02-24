@@ -12,6 +12,10 @@ class TaskService{
         return httpClient.put(`/${TASK_ENDPOINTS.UPDATE_STATUS}/${taskId}/status`,taskNewStatus)
     }
 
+    public assignUser(userIdToAssign:string[]){
+        return httpClient.post('',userIdToAssign)
+    }
+
 }
 
 export const taskService = new TaskService()

@@ -36,7 +36,13 @@ export const allTasks = [
             dateStart: "2024-02-01",
             dateEnd: "2024-03-15",
             statusId: "waiting",
-            color:'#BCF079'
+            color:'#BCF079',
+            users:{
+                userId: "0bb01454-ca6a-11ee-9964-54e1ad3aabaa",
+                username: "ninohantonio",
+                profileURL:''
+            },
+            tags:[]
         }
     ],
     color:"#BCF079"
@@ -51,7 +57,13 @@ export const allTasks = [
                 dateStart: "2024-02-15",
                 dateEnd: "2024-02-15",
                 statusId: "finished",
-                color: '#D449F6'
+                color: '#D449F6',
+                users:{
+                    userId: "0bb01454-ca6a-11ee-9964-54e1ad3aabaa",
+                    username: "ninohantonio",
+                    profileURL:''
+                },
+                tags:[]
             },
             {
                 taskId: "4",
@@ -60,7 +72,13 @@ export const allTasks = [
                 dateStart: "2024-02-18",
                 dateEnd: "2024-02-18",
                 statusId: "finished",
-                color:"#BCF079"
+                color:"#BCF079",
+                users:{
+                    userId: "0bb01454-ca6a-11ee-9964-54e1ad3aabaa",
+                    username: "ninohantonio",
+                    profileURL:''
+                },
+                tags:[]
             }
         ],
     color:"#f6e549"
@@ -75,7 +93,13 @@ export const allTasks = [
                 dateStart: "2024-02-10",
                 dateEnd: "2024-02-20",
                 statusId: "working_on",
-                color:"#D62FBB"
+                color:"#D62FBB",
+                users:{
+                    userId: "0bb01454-ca6a-11ee-9964-54e1ad3aabaa",
+                    username: "ninohantonio",
+                    profileURL:''
+                },
+                tags:[]
             },
             {
                 taskId: "3",
@@ -84,7 +108,12 @@ export const allTasks = [
                 dateStart: "2024-02-05",
                 dateEnd: "2024-02-25",
                 statusId: "working_on",
-
+                tags:[],
+                users:{
+                    userId: "0bb01454-ca6a-11ee-9964-54e1ad3aabaa",
+                    username: "ninohantonio",
+                    profileURL:''
+                },
                 color:"#f6e549"
             }
         ],

@@ -7,6 +7,9 @@ import {useState} from "react";
 import CreateTaskModal from "@/app/dashboard/workspace/_components/modal/create_task_modal";
 import RoundedIndicator from "@/app/dashboard/workspace/_components/kanban/rounded_indicator";
 import Card from "@/app/dashboard/workspace/(task_overview)/components/card/card";
+import OverallPerformance
+    from "@/app/dashboard/workspace/(task_overview)/components/overall_performance/overall_performance";
+import Overview from "@/app/dashboard/workspace/(task_overview)/components/view/overview";
 
 
 
@@ -16,10 +19,8 @@ export default function WorkspaceDetails({params}:{params:{slug:string}}){
     }
     const [isOpen,setIsOPen] = useState<boolean>(false)
     return(
-        <div className="">
-            <div className="grid grid-cols-6">
-                <Card />
-            </div>
+        <div className="w-full h-full">
+             <Overview />
         </div>
     )
 }

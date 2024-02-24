@@ -9,7 +9,7 @@ import OverallProject from "@/app/dashboard/workspace/(task_overview)/components
 class Overview extends Component {
     render() {
         return (
-            <section className="w-full h-full flex justify-between gap-2">
+            <section className="w-full h-full flex justify-between gap-2 py-2">
                 <div className="flex-1 w-full flex flex-col gap-3">
                      <OverallPerformance />
                      <MyTaskTable />

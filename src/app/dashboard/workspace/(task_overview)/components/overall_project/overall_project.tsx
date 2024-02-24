@@ -8,9 +8,9 @@ const overall_data:  { name: string, value: number, color: string }[] = [
 ]
 const OverallProject = () => {
     return (
-        <div>
+        <div className="w-full p-5">
             <div className="p-4">
-                <h3 className="text-xl font-bold text-gray-700">Overall Project</h3>
+                <h3 className="text-2xl font-bold text-gray-700">Overall Project</h3>
             </div>
             <DonutChartHero title="Overall Project" data={overall_data as [{ name: string, value: number, color: string }]} />
         </div>

@@ -7,7 +7,7 @@ const OverallPerformance = () => {
         <div className='w-full p-6 bg-white'>
             <div>
                 <div>
-                    <h3 className="text-xl font-bold text-gray-700">Overall Performance</h3>
+                    <h3 className="text-2xl font-bold text-gray-700">Overall Performance</h3>
                 </div>
                 <div className="w-full grid grid-cols-3 gap-12">
                     {overall_performance.map((item, index) => {

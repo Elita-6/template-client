@@ -26,7 +26,7 @@ const Card = (props: CardProps) => {
                                 <span className="text-gray-600">{progressPercentage}%</span>
                                 <span className="text-gray-600">{`${number_task}/${total_task}`}</span>
                             </div>
-                            <Progress value={progressPercentage} />
+                            <Progress value={progressPercentage} color="blue"/>
                         </div>
                     </div>
                 </div>

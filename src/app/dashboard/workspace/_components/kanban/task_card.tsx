@@ -53,7 +53,11 @@ export const TaskCard = (props: Props) => {
                             {props.task.descriptionTask}
                         </p>
                     </div>
-                    <p className='text-[#506684] text-[12px] opacity-75'> #design-system #ux #ui</p>
+                    <p className='text-[#506684] text-[12px] opacity-75'> {
+                        props.task.tags.map((label,key)=>(
+                            <span key={key}>{label.description}</span>
+                        ))
+                    }</p>
                     <div className='w-full h-[1px] bg-[#000] opacity-15 '/>
                     <div className={cn("grid gap-2", className)}>
                         <Popover>

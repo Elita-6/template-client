@@ -7,7 +7,7 @@ type Props = {
 };
 export const ButtonAdd = (props: Props) => {
     return (
-        <button onClick={props.HandleClick} className=' rounded-lg flex justify-center border  border-[#E2E8F0] bg-white w-full p-2'>
+        <button onClick={props.HandleClick} className=' rounded-lg flex justify-center border  border-[#E2E8F0] bg-white w-full p-3'>
             <IoAddOutline/>
         </button>
     );

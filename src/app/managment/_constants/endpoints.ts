@@ -1,9 +1,8 @@
 
 
 export enum WORKSPACE_ENDPOINTS{
-    CREATE = "",
-    GET_BY_ID = "",
-    RECENT_LIST=""
+    CREATE = "/workspace",
+    RECENT_LIST="/workspace"
 }
 export enum TASK_ENDPOINTS{
     CREATE="",

@@ -10,6 +10,11 @@ export interface ITask{
     color:string
     tags:ITag[]
     users:IUser
+    label:ILabel
+}
+export interface ILabel{
+    labelName:string
+    color:string
 }
 export interface ITag{
     tabId:string

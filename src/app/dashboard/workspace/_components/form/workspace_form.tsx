@@ -1,11 +1,13 @@
 import React from 'react';
 import {SubmitHandler, useForm} from "react-hook-form";
+import {useCreateWorkspace} from "@/app/managment/_hooks/use_create_wroksapce";
 
 interface IFormInput{
     title:string
     description:string
 }
 const WorkspaceForm = () => {
+    const {mutate} = useCreateWorkspace()
     const {
         register,
         handleSubmit,

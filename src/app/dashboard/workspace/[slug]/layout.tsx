@@ -1,7 +1,5 @@
-import {Fragment , PropsWithChildren} from "react";
+import {Fragment } from "react";
 import WorkspaceTitle from "@/app/dashboard/workspace/_components/title/workspace.title";
-import {TabList} from "@/app/dashboard/workspace/_components/tabs/tab-list";
-import FilterBtn from "@/app/dashboard/workspace/_components/button/filter.btn";
 import BottomTabList from "@/app/dashboard/workspace/_components/tabs/bottom.tab-list";
 
 

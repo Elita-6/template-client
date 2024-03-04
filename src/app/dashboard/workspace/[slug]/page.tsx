@@ -1,3 +1,4 @@
+import React from 'react';
 import {useSearchParams} from "next/navigation";
 import SlugContainer from "@/app/dashboard/workspace/_component/slug_container";
 

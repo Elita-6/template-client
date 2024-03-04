@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import QueryClientProvider from "@/lib/query_client.provider"
-import ReactSessionProvider from "@/lib/session.provider";
 import SessionProvider from "@/lib/session.provider";
 import {getServerSession} from "next-auth";
 
